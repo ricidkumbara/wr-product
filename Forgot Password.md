@@ -6,7 +6,7 @@
 Header: 
 ```yaml
 Content-Type: application/json
-X-Referer: http://localhost:3000 # ambil dari current url di FE, tapi domainnya saja
+X-Referer: http://localhost:3000 # ambil dari current url dari FE (tanpa path)
 ```
 
 Request Body
