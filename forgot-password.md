@@ -29,8 +29,8 @@ Response Body - Error
 ```json
 {
   "statusCode": 404,
-  "error": {
-    "message": "Email Not Found"
+  "message": {
+    "description": "Email Not Found"
   }
 }
 ```
@@ -52,9 +52,9 @@ Response Body - Error
 ```json
 {
   "statusCode": 400,
-  "error": {
+  "message": {
     "code": "ERR-001",
-    "message": "Link Expired"
+    "description": "Link Expired"
   }
 }
 ```
@@ -90,9 +90,9 @@ Response Body - Error
 ```json
 {
   "statusCode": 400,
-  "error": {
+  "message": {
     "code": "ERR-004",
-    "message": "Cannot use same password within 3 period back history"
+    "description": "Cannot use same password within 3 period back history"
   }
 }
 ```
