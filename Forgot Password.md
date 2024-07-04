@@ -38,7 +38,7 @@ Response Body - Error
 <hr>
 
 ### Validate Link
-`GET /auth/forgot-password/{id}/validate-link`
+`GET /auth/forgot-password/{token}/validate-link`
 
 Response Body - OK
 ```json
@@ -67,7 +67,7 @@ Error Code List:
 <hr>
 
 ### Reset Password
-`PUT /auth/forgot-password/{id}/reset`
+`PUT /auth/forgot-password/{token}/reset`
 
 Request Body
 ```json
