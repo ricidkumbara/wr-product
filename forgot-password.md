@@ -98,6 +98,6 @@ Response Body - Error
 ```
 
 Error Code List:
-- ERR-100: Cannot use same password within 3 period back history 
+- ERR-101: Cannot use same password within 3 period back history 
 - ERR-102: Password Requirement Not Match 
-- ERR-103: Passsword and Confirm Password Not Match
+- ERR-103: Passsword and Confirm Password is not match
