@@ -101,3 +101,4 @@ Error Code List:
 - ERR-101: Cannot use same password within 3 period back history 
 - ERR-102: Password Requirement Not Match 
 - ERR-103: Passsword and Confirm Password is not match
+- ERR-104: User not found
