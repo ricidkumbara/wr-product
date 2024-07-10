@@ -44,7 +44,7 @@ Response Body - OK
 {
   "statusCode": 200,
   "message": "OK",
-"expired_hours": 24
+  "expired_hours": 24
 }
 ```
 
