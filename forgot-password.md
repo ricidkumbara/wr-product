@@ -25,13 +25,11 @@ Response Body - OK
 }
 ```
 
-Response Body - Error
+Response Body - Error Email Not Found
 ```json
 {
-  "statusCode": 404,
-  "message": {
-    "description": "Email Not Found"
-  }
+  "statusCode": 200,
+  "message": "OK."
 }
 ```
 
