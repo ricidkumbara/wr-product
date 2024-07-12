@@ -43,8 +43,7 @@ Response Body - OK
 ```json
 {
   "statusCode": 200,
-  "message": "OK",
-  "expired_hours": 24
+  "message": "OK"
 }
 ```
 
