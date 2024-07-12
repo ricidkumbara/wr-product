@@ -21,7 +21,7 @@ Response Body - OK
 ```json
 {
   "statusCode": 200,
-  "message": "OK",
+  "message": "Reset Password Link has been sent to your email",
   "expired_hours": 24
 }
 ```
@@ -30,7 +30,7 @@ Response Body - Error Email Not Found
 ```json
 {
   "statusCode": 200,
-  "message": "OK."
+  "message": "Reset Password Link has been sent to your email."
 }
 ```
 
