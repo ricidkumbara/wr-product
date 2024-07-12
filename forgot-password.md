@@ -30,7 +30,8 @@ Response Body - Error Email Not Found
 ```json
 {
   "statusCode": 200,
-  "message": "Reset Password Link has been sent to your email."
+  "message": "Reset Password Link has been sent to your email.",
+  "expired_hours": 24
 }
 ```
 
