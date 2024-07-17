@@ -5,7 +5,7 @@
 
 Query Param (optional), default value with retrieve all list
 ```yaml
-# avaiable, used, all
+# available, used, all
 ?status=available
 ```
 
@@ -121,7 +121,7 @@ Response Body
 
 Query Param (optional), default value with retrieve all list
 ```yaml
-# avaiable, used, all
+# available, used, all
 ?status=available
 ```
 
@@ -189,8 +189,38 @@ Response Body
 }
 ```
 
-### Save
+### Update - Rename
+`PATCH /master/tab-form/tab/{tabId}/field/{fieldId}/rename`
 
-### Update 
+Request Body
+```json
+{
+  "name": "Start Date Updated"  
+}
+```
 
-### Delete
+Response Body
+```json
+{
+  "statusCode": 200,
+  "message": "Successfully Rename Field"
+}
+```
+
+### Update - Mandatory
+`PATCH /master/tab-form/tab/{tabId}/field/{fieldId}/mandatory`
+
+Request Body
+```json
+{
+  "is_mandatory": true  
+}
+```
+
+Response Body
+```json
+{
+  "statusCode": 200,
+  "message": "Successfully Set Mandatory Tab"
+}
+```
