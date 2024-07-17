@@ -114,14 +114,83 @@ Response Body
 
 <hr>
 
-# Form
+# Field
 
-### Get Form
+### Get
+`GET /master/tab-form/tab/{tabId}/field`
 
-### Find Form
+Query Param (optional), default value with retrieve all list
+```yaml
+# avaiable, used, all
+?status=available
+```
 
-### Save Form
+Response Body
+```json
+{
+  "statusCode": 200,
+  "data": [
+    {
+      "id": "encrypted-uuid-1",
+      "tab_id": "encrypted-uuid-1",
+      "name_code_field": "facility",
+      "name": "Benefit",
+      "field_type": "input",
+      "form_type": "text",
+      "max_value": 20,
+      "class": "col-span-12 md:col-span-6",
+      "placeholder": "Benefit",
+      "is_border_top": true,
+      "is_mandatory": true,
+      "is_active": true,
+      "is_deleted": false,
+    },
+    {
+      "id": "encrypted-uuid-2",
+      "tab_id": "encrypted-uuid-2",
+      "name_code_field": "start_date",
+      "name": "Start Date",
+      "field_type": "input",
+      "form_type": "text",
+      "max_value": 20,
+      "class": "col-span-12 md:col-span-6",
+      "placeholder": "Your first day",
+      "is_border_top": true,
+      "is_mandatory": true,
+      "is_active": true,
+      "is_deleted": false,
+    }
+  ]
+}
+```
 
-### Update Form 
+### Find
+`GET /master/tab-form/tab/{tabId}/field/{fieldId}`
 
-### Delete Form
+Response Body
+```json
+{
+  "statusCode": 200,
+  "data": {
+    "id": "encrypted-uuid-2",
+    "tab_id": "encrypted-uuid-2",
+    "name_code_field": "start_date",
+    "name": "Start Date",
+    "field_type": "input",
+    "form_type": "text",
+    "max_value": 20,
+    "class": "col-span-12 md:col-span-6",
+    "placeholder": "Your first day",
+    "is_border_top": true,
+    "is_mandatory": true,
+    "is_active": true,
+    "is_deleted": false,
+  }
+}
+```
+
+### Save
+
+### Update 
+
+### Delete
