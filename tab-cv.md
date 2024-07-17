@@ -77,7 +77,7 @@ Response Body
 ```
 
 ### Update Tab - Rename
-`PATCH /master/tab-form/tab/{id}/name`
+`PATCH /master/tab-form/tab/{id}/rename`
 
 Request Body
 ```json
