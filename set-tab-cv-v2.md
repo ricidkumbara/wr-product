@@ -7,7 +7,7 @@ Response Body
 ```json
 {
   "statusCode": 200,
-  "company_id": "uuid",
+  "company_id": "encrypted-uuid",
   "step": 1, // 1 Set Tab, 2 Set Field
   "status": "draft" // draft, submit
 }
@@ -26,7 +26,7 @@ Response Body
 ```json
 {
   "statusCode": 200,
-  "company_id": "uuid",
+  "company_id": "encrypted-uuid",
   "company_name": "BI",
   "data": [
     {
@@ -35,9 +35,10 @@ Response Body
       "name": "Education",
       "icon": "MortarboardIcon",
       "is_active": true,
-      "sort": true,
+      "sort": 1,
       "is_multiple": true,
-      "is_mandatory": true
+      "is_mandatory": true,
+      "is_configured": true, // Untuk keperluan icon thumbs, true jika sudah konfigurasi tab & form
     },
     {
       "id": "encrypted-uuid-2",
@@ -45,9 +46,10 @@ Response Body
       "name": "Work Experience",
       "icon": "BriefcaseIcon",
       "is_active": true,
-      "sort": true,
+      "sort": 2,
       "is_multiple": true,
-      "is_mandatory": true
+      "is_mandatory": true,
+      "is_configured": true, // Untuk keperluan icon thumbs, true jika sudah konfigurasi tab & form
     }
   ]
 }
@@ -60,7 +62,7 @@ Response Body
 ```json
 {
   "statusCode": 200,
-  "company_id": "uuid",
+  "company_id": "encrypted-uuid",
   "company_name": "BI",
   "data": {
     "id": "encrypted-uuid-2",
@@ -68,9 +70,10 @@ Response Body
     "name": "Work Experience",
     "icon": "BriefcaseIcon",
     "is_active": true,
-    "sort": true,
+    "sort": 2,
     "is_multiple": true,
-    "is_mandatory": true
+    "is_mandatory": true,
+    "is_configured": true, // Untuk keperluan icon thumbs, true jika sudah konfigurasi tab & form
   }
 }
 ```
@@ -86,12 +89,14 @@ Request Body
     {
       "tab_id": "uuid-1",
       "name": "Test-1",
-      "is_mandatory": 1
+      "is_mandatory": 1,
+      "sort": 1
     },
     {
       "tab_id": "uuid-2",
       "name": "Test-2",
-      "is_mandatory": 1
+      "is_mandatory": 1,
+      "sort": 2
     }
   ]
 }
@@ -122,7 +127,7 @@ Response Body
 ```json
 {
   "statusCode": 200,
-  "company_id": "uuid",
+  "company_id": "encrypted-uuid",
   "company_name": "BI",
   "data": [
     {
@@ -138,7 +143,7 @@ Response Body
       "is_border_top": true,
       "is_mandatory": true,
       "is_active": true,
-      "is_deleted": false,
+      "sort": 1
     },
     {
       "id": "encrypted-uuid-2",
@@ -153,7 +158,7 @@ Response Body
       "is_border_top": true,
       "is_mandatory": true,
       "is_active": true,
-      "is_deleted": false,
+      "sort": 2
     }
   ]
 }
@@ -166,7 +171,7 @@ Response Body
 ```json
 {
   "statusCode": 200,
-  "company_id": "uuid",
+  "company_id": "encrypted-uuid",
   "company_name": "BI",
   "data": {
     "id": "encrypted-uuid-2",
@@ -181,7 +186,7 @@ Response Body
     "is_border_top": true,
     "is_mandatory": true,
     "is_active": true,
-    "is_deleted": false,
+    "sort": 2
   }
 }
 ```
@@ -197,12 +202,14 @@ Request Body
     {
       "field_id": "uuid-1",
       "name": "Test-1",
-      "is_mandatory": 1
+      "is_mandatory": 1,
+      "sort": 1
     },
     {
       "field_id": "uuid-2",
       "name": "Test-2",
-      "is_mandatory": 1
+      "is_mandatory": 1,
+      "sort": 2
     }
   ]
 }
