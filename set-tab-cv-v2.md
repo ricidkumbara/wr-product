@@ -8,7 +8,7 @@ Response Body
 {
   "statusCode": 200,
   "company_id": "uuid",
-  "step": 1, // 1 Set Form CV, 2 Set Tab CV
+  "step": 1, // 1 Set Tab, 2 Set Field
   "status": "draft" // draft, submit
 }
 ```
