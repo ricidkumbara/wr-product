@@ -1,6 +1,6 @@
 # Tab
 
-### Get Tab
+### Get
 `GET /master/tab-form/tab`
 
 Query Param (optional), default value with retrieve all list
@@ -38,7 +38,7 @@ Response Body
 }
 ```
 
-### Find Tab
+### Find
 `GET /master/tab-form/tab/{id}`
 
 Response Body
@@ -58,7 +58,7 @@ Response Body
 }
 ```
 
-### Update Tab - Set Active
+### Update - Set Active
 `PATCH /master/tab-form/tab/{id}/active`
 
 Request Body
@@ -76,7 +76,7 @@ Response Body
 }
 ```
 
-### Update Tab - Rename
+### Update - Rename
 `PATCH /master/tab-form/tab/{id}/rename`
 
 Request Body
@@ -94,7 +94,7 @@ Response Body
 }
 ```
 
-### Update Tab - Set Mandatory
+### Update - Set Mandatory
 `PATCH /master/tab-form/tab/{id}/mandatory`
 
 Request Body
@@ -186,6 +186,24 @@ Response Body
     "is_active": true,
     "is_deleted": false,
   }
+}
+```
+
+### Update - Set Active
+`PATCH /master/tab-form/tab/{tabId}/field/{fieldId}/active`
+
+Request Body
+```json
+{
+  "is_active": true  
+}
+```
+
+Response Body
+```json
+{
+  "statusCode": 200,
+  "message": "Successfully Activate Field"
 }
 ```
 
