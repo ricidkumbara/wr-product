@@ -1,7 +1,7 @@
 # Tab
 
 ### Get Current Step
-`GET /master/tab-form/step`
+`GET /master/form-setting/step`
 
 Response Body
 ```json
@@ -14,7 +14,7 @@ Response Body
 ```
 
 ### Get
-`GET /master/tab-form/tab`
+`GET /master/form-setting/tab`
 
 Query Param (optional), default value with retrieve all list
 ```yaml
@@ -56,7 +56,7 @@ Response Body
 ```
 
 ### Find
-`GET /master/tab-form/tab/{id}`
+`GET /master/form-setting/tab/{id}`
 
 Response Body
 ```json
@@ -79,7 +79,7 @@ Response Body
 ```
 
 ### Save / Update
-`POST /master/tab-form/tab`
+`POST /master/form-setting/tab`
 
 Request Body
 ```json
@@ -115,7 +115,7 @@ Response Body
 # Field
 
 ### Get
-`GET /master/tab-form/tab/{tabId}/field`
+`GET /master/form-setting/tab/{tabId}/field`
 
 Query Param (optional), default value with retrieve all list
 ```yaml
@@ -165,7 +165,7 @@ Response Body
 ```
 
 ### Find
-`GET /master/tab-form/tab/{tabId}/field/{fieldId}`
+`GET /master/form-setting/tab/{tabId}/field/{fieldId}`
 
 Response Body
 ```json
@@ -192,7 +192,7 @@ Response Body
 ```
 
 ### Save / Update
-`POST /master/tab-form/tab/{tabId}/field`
+`POST /master/form-setting/tab/{tabId}/field`
 
 Request Body
 ```json
