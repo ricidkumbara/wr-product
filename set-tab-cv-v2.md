@@ -1,5 +1,18 @@
 # Tab
 
+### Get Current Step
+`GET /master/tab-form/step`
+
+Response Body
+```json
+{
+  "statusCode": 200,
+  "company_id": "uuid",
+  "step": 1, // 1 Set Form CV, 2 Set Tab CV
+  "status": "draft" // draft, submit
+}
+```
+
 ### Get
 `GET /master/tab-form/tab`
 
