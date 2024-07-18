@@ -1,7 +1,7 @@
 # Tab
 
 ### Get
-`GET /master/tab-form/tab`
+`GET /master/form-setting/tab`
 
 Query Param (optional), default value with retrieve all list
 ```yaml
@@ -39,7 +39,7 @@ Response Body
 ```
 
 ### Find
-`GET /master/tab-form/tab/{id}`
+`GET /master/form-setting/tab/{id}`
 
 Response Body
 ```json
@@ -59,7 +59,7 @@ Response Body
 ```
 
 ### Update - Set Active
-`PATCH /master/tab-form/tab/{id}/active`
+`PATCH /master/form-setting/tab/{id}/active`
 
 Request Body
 ```json
@@ -77,7 +77,7 @@ Response Body
 ```
 
 ### Update - Rename
-`PATCH /master/tab-form/tab/{id}/rename`
+`PATCH /master/form-setting/tab/{id}/rename`
 
 Request Body
 ```json
@@ -95,7 +95,7 @@ Response Body
 ```
 
 ### Update - Set Mandatory
-`PATCH /master/tab-form/tab/{id}/mandatory`
+`PATCH /master/form-setting/tab/{id}/mandatory`
 
 Request Body
 ```json
@@ -117,7 +117,7 @@ Response Body
 # Field
 
 ### Get
-`GET /master/tab-form/tab/{tabId}/field`
+`GET /master/form-setting/tab/{tabId}/field`
 
 Query Param (optional), default value with retrieve all list
 ```yaml
@@ -165,7 +165,7 @@ Response Body
 ```
 
 ### Find
-`GET /master/tab-form/tab/{tabId}/field/{fieldId}`
+`GET /master/form-setting/tab/{tabId}/field/{fieldId}`
 
 Response Body
 ```json
@@ -190,7 +190,7 @@ Response Body
 ```
 
 ### Update - Set Active
-`PATCH /master/tab-form/tab/{tabId}/field/{fieldId}/active`
+`PATCH /master/form-setting/tab/{tabId}/field/{fieldId}/active`
 
 Request Body
 ```json
@@ -208,7 +208,7 @@ Response Body
 ```
 
 ### Update - Rename
-`PATCH /master/tab-form/tab/{tabId}/field/{fieldId}/rename`
+`PATCH /master/form-setting/tab/{tabId}/field/{fieldId}/rename`
 
 Request Body
 ```json
@@ -226,7 +226,7 @@ Response Body
 ```
 
 ### Update - Mandatory
-`PATCH /master/tab-form/tab/{tabId}/field/{fieldId}/mandatory`
+`PATCH /master/form-setting/tab/{tabId}/field/{fieldId}/mandatory`
 
 Request Body
 ```json
