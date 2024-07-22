@@ -1,5 +1,4 @@
 # Tab
-<!-- 
 ### Get Current Step
 `GET /master/form-setting/step`
 
@@ -8,10 +7,10 @@ Response Body
 {
   "statusCode": 200,
   "company_id": "encrypted-uuid",
-  "step": 1, // 1 Set Tab, 2 Set Field
-  "status": "draft" // draft, submit
+  "step_1": "null", // null, draft, submit
+  "step_2": "null", // null, draft, submit
 }
-``` -->
+```
 
 ### Get
 `GET /master/form-setting/tab`
