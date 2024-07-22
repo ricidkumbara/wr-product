@@ -7,8 +7,8 @@ Response Body
 {
   "statusCode": 200,
   "company_id": "encrypted-uuid",
+  "company_name" : "company name",
   "step_1": "null", // null, draft, submit
-  "step_2": "null", // null, draft, submit
 }
 ```
 
