@@ -4,6 +4,11 @@
 ### Get 2FA QR Code
 `GET /auth/setting-2fa/qrcode`
 
+Header
+```yaml
+Authorization: Bearer xxxxx
+```
+
 Response Body
 ```json
 {
@@ -16,6 +21,11 @@ Response Body
 
 ### Enable 2FA
 `GET /auth/setting-2fa/enable`
+
+Header
+```yaml
+Authorization: Bearer xxxxx
+```
 
 Request Body
 ```json
@@ -34,6 +44,11 @@ Response Body
 
 ### Disable 2FA
 `GET /auth/setting-2fa/disable`
+
+Header
+```yaml
+Authorization: Bearer xxxxx
+```
 
 Response Body
 ```json
