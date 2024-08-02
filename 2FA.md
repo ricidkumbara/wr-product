@@ -123,7 +123,7 @@ Response Body - Error Token Invalid
   "statusCode": 400,
   "message": {
     "error_code": "ERR-202",
-    "message": "2FA Authentication Token Required"
+    "message": "Invalid Token"
   }
 }
 ```
