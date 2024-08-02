@@ -98,10 +98,32 @@ Request Body
 // }
 ```
 
-Response Body
+Response Body - Success
 ```json
 {
   "statusCode": 200,
   "data": "encrypted_payload"
+}
+```
+
+Response Body - Error Token Required
+```json
+{
+  "statusCode": 400,
+  "message": {
+    "error_code": "ERR-201",
+    "message": "2FA Authentication Token Required"
+  }
+}
+```
+
+Response Body - Error Token Invalid
+```json
+{
+  "statusCode": 400,
+  "message": {
+    "error_code": "ERR-202",
+    "message": "2FA Authentication Token Required"
+  }
 }
 ```
