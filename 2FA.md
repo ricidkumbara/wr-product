@@ -58,6 +58,24 @@ Response Body
 }
 ```
 
+### Get 2FA Status
+`GET /auth/setting-2fa/status`
+
+Header
+```yaml
+Authorization: Bearer xxxxx
+```
+
+Response Body
+```json
+{
+  "statusCode": 200,
+  "data": {
+    "status": "enabled" // enabled, disabled
+  }
+}
+```
+
 ### Login with 2FA
 - This API used at 2nd step after login using username & password
 - Captcha should be regenerated
